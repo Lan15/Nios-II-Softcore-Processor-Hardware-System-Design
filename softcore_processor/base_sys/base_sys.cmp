@@ -1,7 +1,10 @@
 	component base_sys is
 		port (
-			clk_clk       : in std_logic := 'X'; -- clk
-			reset_reset_n : in std_logic := 'X'  -- reset_n
+			clk_clk            : in  std_logic                    := 'X'; -- clk
+			pio_input_in_port  : in  std_logic                    := 'X'; -- in_port
+			pio_input_out_port : out std_logic;                           -- out_port
+			pio_leds_export    : out std_logic_vector(7 downto 0);        -- export
+			reset_reset_n      : in  std_logic                    := 'X'  -- reset_n
 		);
 	end component base_sys;
 

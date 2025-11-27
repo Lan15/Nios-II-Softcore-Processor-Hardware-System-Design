@@ -49,7 +49,7 @@ module base_sys_sys_id (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1764243152 : 305419896;
+  assign readdata = address ? 1764244472 : 305419896;
 
 endmodule
 

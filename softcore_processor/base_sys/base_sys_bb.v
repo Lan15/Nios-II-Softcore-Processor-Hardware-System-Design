@@ -1,14 +1,12 @@
 
 module base_sys (
 	clk_clk,
-	reset_reset_n,
+	pio_input_export,
 	pio_leds_export,
-	pio_input_in_port,
-	pio_input_out_port);	
+	reset_reset_n);	
 
 	input		clk_clk;
-	input		reset_reset_n;
+	input		pio_input_export;
 	output	[7:0]	pio_leds_export;
-	input		pio_input_in_port;
-	output		pio_input_out_port;
+	input		reset_reset_n;
 endmodule
